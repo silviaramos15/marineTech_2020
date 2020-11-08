@@ -227,11 +227,6 @@ header h3 {
 }
 
 
-/* //autocomplete// */
-.autocomplete {
-    position: relative;
-    display: inline-block;
-}
 
 
 /* 2ND SECTION */
@@ -279,67 +274,9 @@ header h3 {
 .widget-container-half ol  li {
     line-height:2em;
 }
-/* 4TH SECTION */
-.social {
-  max-width: 95%;
-  margin: 0 auto;
-}
 
-.social-square {
-  
-    border: 1px solid var(--border-color);
-    margin-bottom: .8em;
-    padding: 0 70px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: var(--inputs-color);
-}
+/*SECTION */
 
-.social-image img{
-    width: 48px;
-    border: 1px solid var(--second-bg-color);
-    background-color: var(--second-bg-color);
-    padding: .6em;
-    border-radius: 50%;
-}
-
-.social-text p:first-child {
-    color: var(--second-bg-color);
-    font-weight: 900;
-}
-/* 5TH SECTION */
-
-.bloque {
-    width: 100%;
-}
-
-.members-activity {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   border: 1px solid var(--border-color);
-   padding: 5px 0;
-   margin-top: 1.5em;
- 
-}
-.members {
-    width: 95%;
-    margin: 0 auto;
-    margin-top: 10px;
-    height: 60px;
-   
-}
-
-.members:not(:last-child){
-    border-bottom: 1px solid var(--border-color);
-    padding-bottom: 10px;
-}
-.person {
-    display: flex;
-    justify-content: space-between;
-   align-items: center;
-}
 .person-text,
 .problem-item{
     flex-grow: 1;
@@ -349,146 +286,25 @@ header h3 {
      width: 20px;
      height: 20px;
      margin-right: 5px;
+     transition: .5s ease-in-out;
+ }
+ .item-img img:hover {
+     transform: rotate(25deg);
  }
 .problem-item {
     display: flex;
     align-items: center;
 }
 
-/* 6TH SECTION */
-
-.arrow {
-    background-image: url('../images/icons/arrow.png');
-	background-position: 97% ;
-    background-repeat: no-repeat;
-    z-index: 2;
-}
-
-.member-text p{
-    font-size: var(--font-size-s-factor);
-    margin: 0;
-}
 
 
-/* MESSAGE CONTAINER */
-/* FORM */
-.user-interaction {
-    width: 100%;
-    margin-bottom: 40px;;
-}
-.bloque-2 {
-    width: 95%;
-}
-.form {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-}
-fieldset {
-    border: none;
-}
-.form-field,
-.form-area {
-    width: 100%;
-}
-form input,
-form textarea {
-    margin-bottom: 10px;
-    border: 1px solid var(--main-bg-color);
-    border-radius: 8px;
-    background-color: var(--inputs-color);
-}
 
-textarea {
-    height: 100px;
-}
-#messageField::placeholder {
-    padding-top: 10px;
-}
-.message button {
-    width: 90%;
-    margin: 0 auto;
-    display: block;
-   
-}
 
-.bloque-2 {
-    height: 60px;
-}
-/* SETTINGS BLOCK */
-.settings {
-    width: 100%;
-}
 
-.notifications {
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    
-}
-
-.bloque-2 {
-    height: 300px;
-   
-}
-.settings p {
-    font-size: var(--font-size-s-factor);
-  
-    
-}
-.notifications label {
-    width: 70px;
-    margin-bottom: 10px;
-}
-
-#timezone,
-.settings-button {
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-}
-.settings-button {
-    display: flex;
-    justify-content: space-between;
-    
-    
-}
-.settings-button button {
-    width: 45%;
-    margin-top: 40px;
-    
-    
-}
-.form-selector {
-    height: 25px;
-}
-
-/* ------------ JAVASCRIPT STYLES--------------- */
-#alert {
-    margin: 0 auto;
-    width: 95%;
-    border: 1px solid var(--second-bg-color);
-    border-radius: 2px;;
-    background-color: var(--second-bg-color);
-    color: var(--border-color);
-    margin-top: .7em;
-    
-}
-#alert p {
-    display: inline-block;
-    padding: 0 1em;
-}
-#alert p:last-child {
-    float: right;
-    cursor: pointer;
-}
 
 /* ---------------- MEDIA QUERIES */
 @media (min-width: 768px) {
-    /* .user-notification {
-        left: -50px;
-    } */
+   
     nav {
         position: sticky;
         height: auto;
@@ -529,29 +345,8 @@ textarea {
     h5 {
         font-size: var(--font-size-s-factor);
     }
-    /* images */
-    .avatar {
-        height: 50%;
-    }
-    .avatar img {
-        width: 2.250em;
-        height: 2em;
-    }
-    .popUp {
-        width: 25%;
-        right: 10px;
-
-    }
-    /* MAIN */
- .input .search-input {
-        width: 50%;
-    }
-    .search-input input {
-        width: 40%;
-    }
-    .input .search-input {
-        width: 90%;
-    }
+    
+ 
     /* sections */
     .traffic-header,
     .traffic-nav {
@@ -571,100 +366,7 @@ textarea {
     border-right: 1px solid var(--border-color);
     border-bottom: 1px solid var(--border-color);
 }
-
-/* SOCIAL SECTION */
-.social-group{
-    display: flex;
-    width: 95%;
-    margin: 0 auto;
 }
-.social-square {
-flex-grow: 1;
-justify-content: center;;
-}
-.social-square:not(:last-child) {
-    margin-right: 2.5em;
-}
-.social-text p:last-child {
-    font-size: 32px;
-    margin-top: 0;
-}
-.social-text {
-    margin-left: 1.2em;
-}
-.social-text p:first-child {
-    margin-bottom: 0;
-    padding-top: .7em;;
-}
-/* Members section */
-.user-interaction {
-    display: flex;
-}
-.board,
-.settings {
-border-left: 1px solid var(--border-color);
-}
-
-.members-activity {
-    flex-direction: row;
-    width: 100%;
-}
-.person-text p {
-    font-size: var(--font-size-m-factor);
-    margin: 0;
-   
-}
-.person-mail {
-    font-size: var(--font-size-s-factor);
-    color: var(--main-bg-color);
-}
-.person img {
-    width: 42px;
-    border: 1px solid white;
-    border-radius: 50%;
-   
-}
-.person-text{
-    margin-right: 0;
-   
-    } 
-    .member-text p{
-        font-size: var(--font-size-s-factor);
-        margin: 0;
-    }
-    .member-text p:last-child {
-        font-size: var(--font-size-xs-factor);
-    }
-    .bloque-2 {
-        width: 50%;
-    }
-  /* Message section */
-   form input {
-       height: 30px;
-   }
-   form textarea {
-       height: 120px;
-   }
-   .message button {
-       height: 40px;
-   }
-/* Settings */
-.notifications {
-    justify-content: flex-start;
-    margin-bottom: 10px;
-  
-}
-.notifications p {
-    font-size: var(--font-size-m-factor);
-    width: 50%;
-}
-  .notifications label {
-      width: 25%;
-     
-  }
-  
-}
-
 
 @media (min-width: 1024px) {
     /* ---HEADER */

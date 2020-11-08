@@ -73,47 +73,47 @@ function activate_chart (labels, data, data2){
 }
 
 //labels and data from monthly chart
-const data = [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500, 2500, 3200]
-const data2 = [250, 1150, 1200, 2450, 1100, 1350, 1610, 1800, 2210, 1510, 2200, 3100]
-const labels= ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+const data = [25.61, 24.80, 26.85, 21.42, 23.39, 29.75]
+const data2 = [25.61, 24.80, 26.85, 21.42, 23.39, 29.75]
+const labels= ["2014", "2015", "2016", "2017", "2018", "2019"]
 
 activate_chart(labels,data, data2)
 
 
     //TRAFFIC CHART SWITCH
-    //water data
+    //temperature data
     const water = document.getElementById('water');
     water.addEventListener('click', e => {
         activate_chart(labels,data,data2);
         activateClass(e.target);
     });
 
-    //Accustic data
+    //PH data
     const accustic = document.getElementById('accustic');
     accustic.addEventListener('click', e => {
-       const accustic_label = ["07:00", "08:00", "09:00", "10:00", "11:00", "12:00", "13:00", "14:00", "15:00", "16:00", "17:00"];
-       const accustic_data = [3, 7, 12, 19, 9, 1, 8, 10, 15, 12, 18];
-       const accustic_data2 = [5, 17, 11, 10, 9, 1, 5, 12, 18, 15, 17];
+       const accustic_label = ["2014", "2015", "2016", "2017", "2018", "2019"];
+       const accustic_data = [8.2, 9.16, 7.44, 8.18, 7.99, 7.55];
+       const accustic_data2 = [8.2, 9.16, 7.44, 8.18, 7.99, 7.55];
         activate_chart(accustic_label, accustic_data, accustic_data2);
         activateClass(e.target);
  
     });
-    //Optic data
+    //Salinity data
     const optic= document.getElementById('optic');
     optic.addEventListener('click', e => {
-        const optic_data = [10, 7, 9, 23, 19, 23, 8];
-        const optic_data2 = [10, 7, 12, 25, 15, 20, 9];
-        const optic_label = ["Mon", "Tue", "Web", "Thu", "Fri", "Sat", "Sun"];
+        const optic_data = [8.11, 13.54, 32.49, 24.85, 16.48, 36.62];
+        const optic_data2 = [8.11, 13.54, 32.49, 24.85, 16.48, 36.62];
+        const optic_label = ["2014", "2015", "2016", "2017", "2018", "2019"];
         activate_chart(optic_label, optic_data, optic_data2);
         activateClass(e.target);
     });
 
-  //Sonar data
+  //Turbidity data
   const sonar = document.getElementById('sonar');
   sonar.addEventListener('click', e => {
-      const sonar_data = [115, 70, 23, 46, 72, 170, 91, 12];
-      const sonar_data2 = [100, 50, 20, 41, 70, 120, 81, 2];
-      const sonar_label = ["01-07", "08-14", "15-21", "22-28", "29-31"];
+      const sonar_data = [3.66, 0.18, 3.50, 2.12, 1.58, 7.80];
+      const sonar_data2 = [3.66, 0.18, 3.50, 2.12, 1.58, 7.80];
+      const sonar_label = ["2014", "2015", "2016", "2017", "2018", "2019"];
       activate_chart(sonar_label, sonar_data, sonar_data2);
       activateClass(e.target);
   });
