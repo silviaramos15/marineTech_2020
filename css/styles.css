@@ -102,9 +102,7 @@ header h3 {
     border-radius: 5px; 
 }
 
-.settings label {
-    padding-top: 10px;
-}
+
 
 
 /*---------- Hamburger menu ------------*/
@@ -184,7 +182,6 @@ header h3 {
     padding: 3px 8px;
 }
 
-/* Images */
 
 
 /* ----------- SIDE NAV */
@@ -224,6 +221,7 @@ header h3 {
 }
 .sealight_intro p {
     width: 95%;
+    text-align: center;
 }
 
 

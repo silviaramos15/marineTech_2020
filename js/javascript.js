@@ -33,13 +33,13 @@ function activate_chart (labels, data, data2){
       data: data,
       backgroundColor: 'rgba(211,228,229, .3)',
       borderWidth: 3,
-      borderColor: 'rgba(197,220,221, .4)',
+      borderColor: 'rgba(197,220,221, .9)',
       }, {
         label: 'Prediction',
         data: data2,
         backgroundColor: 'rgba(211,228,229, .3)',
         borderWidth: 3,
-        borderColor: 'rgba(197,220,221, .9)',
+        borderColor: 'rgba(197,220,221, .4)',
         
         
       }
@@ -118,7 +118,15 @@ activate_chart(labels,data, data2)
       activateClass(e.target);
   });
 
+//Qualitydata
+const quality = document.getElementById('quality');
+quality.addEventListener('click', e => {
+   const quality_label = ["2014", "2015", "2016", "2017", "2018", "2019"];
+   const quality_data = [1, 0.05, 0.05, 0.05, 1, 1];
+    activate_chart(quality_label, quality_data);
+    activateClass(e.target);
 
+});
     
 
 //data for mobile chart
@@ -127,7 +135,7 @@ const mobileCanvas = document.getElementById('mobile-chart');
 const mobileData = {
     labels: ["Chemical Industrial", "Construction", "Pesticide", "Oil", "Domestic", "Agricultural", "Natural", "Other"],
     datasets: [{
-        label: '# porcentage in 2016',
+        label: '# porcentage in 2016, UK',
         data: [9, 7, 3, 39, 13, 13, 6, 7],
         borderWidth: 2,
         backgroundColor: [
